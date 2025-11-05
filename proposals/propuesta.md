@@ -86,6 +86,7 @@ Python 3.10+, librerías estándar (re, datetime, json, logging) y entorno local
 -----------------------
 # Tarea 3 (Titulo):
 
+Propósito:
 Función, rol o área de la ciberseguridad relacionada: 
 Entradas esperadas:
 Salidas esperadas:
@@ -100,6 +101,7 @@ Dependencias:
 -----------------------
 # Tarea 4 (Titulo):
 
+Propósito: 
 Función, rol o área de la ciberseguridad relacionada: 
 Entradas esperadas:
 Salidas esperadas:
