@@ -98,15 +98,13 @@ Entradas esperadas:
 
 Salidas esperadas: Archivo procesos_sospechosos.json con detalles de cada proceso detectado:
 
-{
-
+{ 
   "pid": 1234,
   "nombre": "svchost.exe",
   "consumo_cpu": 85.5,
   "usuario": "system",
   "riesgo": "medio",
   "razon": "Alto consumo de recursos"
-  
 }
 
 Reporte en tiempo real en consola de procesos activos monitoreados
