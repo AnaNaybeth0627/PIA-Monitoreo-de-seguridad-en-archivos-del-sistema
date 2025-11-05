@@ -92,9 +92,7 @@ Función, rol o área de la ciberseguridad relacionada: EDR (Endpoint Detection 
 
 Entradas esperadas:
 - Lista de procesos en ejecución del sistema
-
 - Patrones de procesos sospechosos (ej: nombres similares a system32, alto consumo de CPU, múltiples instancias)
-
 - Umbrales de detección configurables
 
 
@@ -103,15 +101,10 @@ Salidas esperadas: Archivo procesos_sospechosos.json con detalles de cada proces
 {
 
   "pid": 1234,
-  
   "nombre": "svchost.exe",
-  
   "consumo_cpu": 85.5,
-  
   "usuario": "system",
-  
   "riesgo": "medio",
-  
   "razon": "Alto consumo de recursos"
   
 }
