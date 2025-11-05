@@ -1,1 +1,1 @@
-Descripcion general del proyecto:
+Este proyecto se centra en el monitoreo de seguridad de los archivos del sistema operativo, ofreciendo múltiples tareas que ayudan a la detección de actividad sospechosa, modificaciones en archivos críticos y procesos inusuales que puedan ocurrir en el sistema.
