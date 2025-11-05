@@ -90,6 +90,7 @@ Dependencias:
 ##Roles del equipo: Este proyecto se llevará a cabo respetando la confidencialidad y privacidad de la información del sistema, garantizando no se modifiquen los archivos del sistema durante el proceso de supervisión.
 
 Ana Naybeth Medina Perez| Lectura y registro de archivos criticos
+
 Angel Gabriel Cruz Velazquez| Detección de intentos de acceso sospechosos en logs
 
 ##Declaracion Etica y Legal:
