@@ -32,6 +32,7 @@ Función, rol o área de la ciberseguridad relacionada:  Módulo encargado del m
 Entradas esperadas: Archivos de logs con registros de autenticación y eventos del sistema.
 
 Salidas esperadas: Archivo JSON con eventos sospechosos detectados y reporte en formato Markdown con resumen de hallazgos.
+
 Descripción del procedimiento: El sistema analiza los registros del sistema para identificar múltiples intentos fallidos de acceso desde una misma IP. Los eventos sospechosos se clasifican por severidad y se guardan en archivos estructurados y reportes legibles.
 
 Complejidad técnica: Procesamiento y parsing de texto, correlación de eventos, y automatización con Python utilizando librerías estándar.
