@@ -35,9 +35,9 @@ Contienen registros de autenticación con fecha, usuario, IP y resultado.
 
 Ejemplo:
 
-[2025-11-05 03:21:12] login failed for user 'root' from 192.168.1.12
-[2025-11-05 03:21:15] login failed for user 'root' from 192.168.1.12
-[2025-11-05 03:22:01] login success for user 'admin' from 10.0.0.4
+-[2025-11-05 03:21:15] login failed for user 'root' from 192.168.1.12
+-[2025-11-05 03:21:15] login failed for user 'root' from 192.168.1.12
+-[2025-11-05 03:22:01] login success for user 'admin' from 10.0.0.4
 
 Salidas esperadas: Archivo output_tarea1.jsonl con eventos sospechosos en formato JSON lines.
 
