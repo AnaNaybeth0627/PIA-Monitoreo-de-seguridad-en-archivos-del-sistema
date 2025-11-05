@@ -48,10 +48,11 @@ Archivo output_tarea2.jsonl con eventos sospechosos en formato JSON lines:
 
 {"timestamp": "2025-11-05T03:21:15", "source_ip": "192.168.1.12", "event": "multiple_failed_logins", "severity": "medium"}
 
-Reporte reporte_tarea2.md con resumen de hallazgos:
--Total de intentos fallidos: 8
--IP con más intentos: 192.168.1.12
--Eventos sospechosos detectados: 2
+Reporte `reporte_tarea2.md` con resumen de hallazgos:  
+
+- Total de intentos fallidos: **8**  
+- IP con más intentos: **192.168.1.12**  
+- Eventos sospechosos detectados: **2**
 
 Descripción del procedimiento:
 El sistema analiza los registros del sistema para identificar múltiples intentos fallidos de acceso desde una misma IP. Los eventos sospechosos se clasifican por severidad y se guardan en archivos estructurados y reportes legibles.
