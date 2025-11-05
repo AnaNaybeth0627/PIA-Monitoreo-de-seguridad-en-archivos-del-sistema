@@ -61,11 +61,9 @@ Dependencias:
 
 ##Roles del equipo:
 
-Ana Naybeth Medina Perez|Lectura y registro de archivos criticos
+Ana Naybeth Medina Perez| Lectura y registro de archivos criticos
 
 ##Declaracion Etica y Legal:
 
-
-Controles éticos:
 
 -----------------------
