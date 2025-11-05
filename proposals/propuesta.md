@@ -25,15 +25,20 @@ Dependencias: Sistema operativo con permisos adecuados y herramienta de registro
 
 
 -----------------------
-#Tarea 2 (Titulo):
+#Tarea 2 (Titulo): Detección de intentos de acceso sospechosos en logs
 
-Función, rol o área de la ciberseguridad relacionada: 
-Entradas esperadas:
-Salidas esperadas:
-Descripción del procedimiento:
-Complejidad técnica:
-Controles éticos:
-Dependencias:
+Función, rol o área de la ciberseguridad relacionada:  Módulo encargado del monitoreo y detección de intentos de acceso no autorizados en registros del sistema, con el objetivo de identificar posibles ataques de fuerza bruta o accesos indebidos.
+
+Entradas esperadas: Archivos de logs con registros de autenticación y eventos del sistema.
+
+Salidas esperadas: Archivo JSON con eventos sospechosos detectados y reporte en formato Markdown con resumen de hallazgos.
+Descripción del procedimiento: El sistema analiza los registros del sistema para identificar múltiples intentos fallidos de acceso desde una misma IP. Los eventos sospechosos se clasifican por severidad y se guardan en archivos estructurados y reportes legibles.
+
+Complejidad técnica: Procesamiento y parsing de texto, correlación de eventos, y automatización con Python utilizando librerías estándar.
+
+Controles éticos: Se emplean únicamente datos sintéticos; no se usan registros reales ni información sensible.
+
+Dependencias: Python 3.10+, librerías estándar (re, datetime, json, logging) y entorno local controlado.
 
 -----------------------
 
@@ -68,6 +73,7 @@ Dependencias:
 ##Roles del equipo: Este proyecto se llevará a cabo respetando la confidencialidad y privacidad de la información del sistema, garantizando no se modifiquen los archivos del sistema durante el proceso de supervisión.
 
 Ana Naybeth Medina Perez| Lectura y registro de archivos criticos
+Angel Gabriel Cruz Velazquez| Detección de intentos de acceso sospechosos en logs
 
 ##Declaracion Etica y Legal:
 
