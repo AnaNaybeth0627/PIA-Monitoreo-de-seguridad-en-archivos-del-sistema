@@ -1,21 +1,32 @@
-##Titulo del proyecto: Monitoreo de seguridad en archivos del sistema
+# Titulo del proyecto: Monitoreo de seguridad en archivos del sistema
 
 
 
-##Fichas Tecnicas##
+## Fichas Tecnicas
 
 -----------------------
-#Tarea 1 (Lectura y Registro de archivos criticos):
+# Tarea 1 (Lectura y Registro de archivos criticos):
 
-Función, rol o área de la ciberseguridad relacionada: Modulo encargado en la deteccion de cambios en archivos criticos del sistema y del registro de eventos con fecha y hora.
+Propósito: Detectar y registrar cambios en archivos críticos del sistema ubicados en el directorio base y todas sus subcarpetas
 
-Entradas esperadas: lectura de todos los archivos dentro del directorio base, incluyendo las subcarpetas.
+Función, rol o área de la ciberseguridad relacionada: Blue Team-Deteccion de cambios en archivos criticos del sistema y del registro de eventos con fecha y hora.
+
+Entradas esperadas: lectura de todos los archivos dentro del directorio base /home/usuario/ incluyendo las subcarpetas.
+Archivo de estado previo por ejemplo (estado_anterior.json o estado_anterior.txt)
 
 Salidas esperadas: informacion de cuando y que cambio ocurrio, con fecha y hora del evento.
 
+ejemplo del archivo de registro .txt
+
+[2025-11-05 15:30:22] Modificado: /home/usuario/documentos/ejemplo.txt
+Detalles del cambio:
+-linea 7 modificada: "Este es un ejemplo" → "Este no es un ejemplo"
+[2025-11-05 15:31:05] Creado: /home/usuario/imagenes/ejemplo2.png
+[2025-11-05 15:32:10] Eliminado: /home/usuario/scripts/ejemplo3.sh
+
 Descripción del procedimiento: Se leen los archivos criticos y anota cualquier cambio detectado en un archivo de texto, indicando el archivo modificado con su fecha y hora del cambio.
 
-Complejidad técnica: Conocimiento basico en la lectura de archivos, comparar su estado actual con ela archivo previo y registrar los cambios en un archivo txt. Tener un conocimiento en el manejo de rutas y recorre las subcarpetas del misimo directorio.
+Complejidad técnica: Lectura de archivos, comparar su estado actual con el archivo previo y registrar los cambios en un archivo txt. Tener un conocimiento en el manejo de rutas y recorre las subcarpetas del misimo directorio.
 
 Controles éticos: Garantizar la confidencialidad de los archivos críticos al no modificar su contenido durante la lectura.
 
@@ -70,7 +81,7 @@ Python 3.10+, librerías estándar (re, datetime, json, logging) y entorno local
 
 
 -----------------------
-#Tarea 3 (Titulo):
+# Tarea 3 (Titulo):
 
 Función, rol o área de la ciberseguridad relacionada: 
 Entradas esperadas:
@@ -84,7 +95,7 @@ Dependencias:
 
 
 -----------------------
-#Tarea 4 (Titulo):
+# Tarea 4 (Titulo):
 
 Función, rol o área de la ciberseguridad relacionada: 
 Entradas esperadas:
@@ -96,13 +107,15 @@ Dependencias:
 
 -----------------------
 
-##Roles del equipo: Este proyecto se llevará a cabo respetando la confidencialidad y privacidad de la información del sistema, garantizando no se modifiquen los archivos del sistema durante el proceso de supervisión.
+### Roles del equipo: 
 
 Ana Naybeth Medina Perez| Lectura y registro de archivos criticos
 
 Angel Gabriel Cruz Velazquez| Detección de intentos de acceso sospechosos en logs
 
-##Declaracion Etica y Legal:
+### Declaracion Etica y Legal: 
+
+Este proyecto se llevará a cabo respetando la confidencialidad y privacidad de la información del sistema, garantizando que no se modifiquen los archivos del sistema durante el proceso de supervisión.
 
 
 -----------------------
