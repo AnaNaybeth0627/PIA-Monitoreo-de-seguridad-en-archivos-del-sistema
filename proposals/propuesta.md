@@ -27,11 +27,28 @@ Dependencias: Sistema operativo con permisos adecuados y herramienta de registro
 -----------------------
 #Tarea 2 (Titulo): Detección de intentos de acceso sospechosos en logs
 
-Función, rol o área de la ciberseguridad relacionada:  Módulo encargado del monitoreo y detección de intentos de acceso no autorizados en registros del sistema, con el objetivo de identificar posibles ataques de fuerza bruta o accesos indebidos.
+Función, rol o área de la ciberseguridad relacionada: SOC – Monitoreo y detección de intentos de acceso no autorizados en registros del sistema.
 
-Entradas esperadas: Archivos de logs con registros de autenticación y eventos del sistema.
+Entradas esperadas: Archivos de logs en formato .log o .txt, generados sintéticamente.
 
-Salidas esperadas: Archivo JSON con eventos sospechosos detectados y reporte en formato Markdown con resumen de hallazgos.
+Contienen registros de autenticación con fecha, usuario, IP y resultado.
+
+Ejemplo:
+
+[2025-11-05 03:21:12] login failed for user 'root' from 192.168.1.12
+[2025-11-05 03:21:15] login failed for user 'root' from 192.168.1.12
+[2025-11-05 03:22:01] login success for user 'admin' from 10.0.0.4
+
+Salidas esperadas: Archivo output_tarea1.jsonl con eventos sospechosos en formato JSON lines.
+
+{"timestamp": "2025-11-05T03:21:15", "source_ip": "192.168.1.12", "event": "multiple_failed_logins", "severity": "medium"}
+
+Reporte reporte_tarea2.md con resumen de hallazgos:
+
+## Resumen de hallazgos
+- Total de intentos fallidos: 8  
+- IP con más intentos: 192.168.1.12  
+- Eventos sospechosos detectados: 2
 
 Descripción del procedimiento: El sistema analiza los registros del sistema para identificar múltiples intentos fallidos de acceso desde una misma IP. Los eventos sospechosos se clasifican por severidad y se guardan en archivos estructurados y reportes legibles.
 
