@@ -44,8 +44,6 @@ Salidas esperadas: Archivo output_tarea1.jsonl con eventos sospechosos en format
 {"timestamp": "2025-11-05T03:21:15", "source_ip": "192.168.1.12", "event": "multiple_failed_logins", "severity": "medium"}
 
 Reporte reporte_tarea2.md con resumen de hallazgos:
-
-## Resumen de hallazgos
 - Total de intentos fallidos: 8  
 - IP con más intentos: 192.168.1.12  
 - Eventos sospechosos detectados: 2
