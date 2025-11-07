@@ -16,7 +16,7 @@ function LecturaRegistro {
         }
 
         # Mostrar en consola
-        $logObj | Format-Table -AutoSize
+        Write-Host ("{0,-20} {1,-10} {2}" -f $logObj.timestamp, $logObj.event, $logObj.details)
 
 
         $linea = "{0,-20} {1,-10} {2}" -f $logObj.timestamp, $logObj.event, $logObj.details
@@ -47,5 +47,6 @@ function LecturaRegistro {
     Write-Host "Watcher detenido."
     Write-Host "Reporte TXT generado."
     Write-Host "Log JSON generado."
+
 
 }
