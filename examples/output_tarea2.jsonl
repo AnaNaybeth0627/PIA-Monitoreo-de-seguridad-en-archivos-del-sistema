@@ -1,0 +1,1 @@
+{"timestamp": "2025-11-05 03:21:17", "source_ip": "192.168.1.12", "event": "multiple_failed_logins", "severity": "medium", "user": "root", "failed_attempts": 3}
